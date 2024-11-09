@@ -1,0 +1,189 @@
+/* Styling untuk seluruh container */
+.user-list-container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 30px;
+}
+
+/* Tombol untuk menambah user */
+.add-user-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px; /* Membuat sudut tombol melengkung */
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: all 0.3s ease; /* Menambahkan transisi untuk semua properti */
+  cursor: pointer; /* Menambahkan pointer saat hover */
+  text-align: center;
+}
+
+.add-user-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-3px); /* Efek mengangkat tombol */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan halus */
+}
+
+.add-user-btn:active {
+  transform: translateY(1px); /* Efek tombol tertekan */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Bayangan saat ditekan */
+}
+
+.add-user-btn:focus {
+  outline: none; /* Menghilangkan outline default */
+  box-shadow: 0 0 0 3px rgba(72, 195, 81, 0.4); /* Tambahkan fokus bayangan untuk aksesibilitas */
+}
+
+.add-user-btn span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.add-user-btn:hover span {
+  transform: scale(1.1); /* Memberikan efek perbesaran pada teks saat hover */
+}
+
+/* Styling untuk daftar pengguna */
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling untuk setiap item pengguna */
+.user-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  position: relative; /* Menambahkan relative positioning */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya avatar pengguna */
+.user-avatar {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* Styling untuk detail pengguna */
+.user-details {
+  flex: 1;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.user-details p {
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Styling untuk tombol Edit dan Delete */
+.user-actions {
+  position: absolute; /* Menetapkan posisi absolut */
+  top: 50%; /* Menempatkan tombol di tengah vertikal kartu */
+  right: 20px; /* Menempatkan tombol di kanan kartu */
+  transform: translateY(-50%); /* Memastikan tombol berada di tengah vertikal */
+  display: flex;
+  gap: 10px; /* Jarak antar tombol */
+}
+
+/* Tombol Edit dan Delete */
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Tombol Edit */
+.edit-btn {
+  background-color: #4caf50; /* Hijau */
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-3px); /* Efek mengangkat tombol */
+}
+
+.edit-btn:active {
+  transform: translateY(1px); /* Efek tombol tertekan */
+}
+
+.edit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(72, 195, 81, 0.4);
+}
+
+/* Tombol Delete */
+.delete-btn {
+  background-color: #f44336; /* Merah */
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+  transform: translateY(-3px); /* Efek mengangkat tombol */
+}
+
+.delete-btn:active {
+  transform: translateY(1px); /* Efek tombol tertekan */
+}
+
+.delete-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.4);
+}
+
+/* Styling untuk menampilkan Loading dan error */
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ff5733; /* warna merah untuk error */
+  margin-top: 50px;
+}
+
+/* Menambahkan sedikit spasi antara elemen */
+hr {
+  border: 1px solid #eee;
+  margin: 15px 0;
+}
